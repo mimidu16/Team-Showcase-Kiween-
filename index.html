@@ -75,10 +75,10 @@
             const rowObj = {};
             headers.forEach((h, i) => rowObj[h] = cols[i] ? cols[i].trim() : "");
 
-            const prenom = rowObj.prenom || "Inconnu";
-            const expertise = rowObj.expertise || "";
-            const description = rowObj.description || "Pas de description disponible.";
-            const image = rowObj.image || "https://via.placeholder.com/400x250?text=Image+manquante";
+            const name = rowObj.name || "Inconnu";
+            const role = rowObj.role || "";
+            const des = rowObj.des || "Pas de description disponible.";
+            const img = rowObj.img || "https://via.placeholder.com/400x250?text=Image+manquante";
 
             // créer card
             const card = document.createElement('div');
@@ -126,3 +126,4 @@
 </body>
 
 </html>
+
