@@ -31,7 +31,7 @@
   <div id="modalsContainer"></div>
 
   <script>
-    const sheetCSV = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQKnMUR2esAtSYTwgMt6PBvvRK3pl4J2cBtodlmZs-sjugcRwIjvnMsOKxYBBWd_facEE0Lj9cUNzMl/pub?output=csv';
+    const sheetCSV = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQ2QG9oHTqtTL9lCOwf3Uy3QLHWxFeYyVPiG4Jc-I8mUiMl9ZuR-0gIZv7VM8AD3j6Bpshnb-RJnTR_/pubhtml?output=csv';
 
     // Parseur CSV maison
     function parseCSV(text) {
@@ -75,10 +75,10 @@
             const rowObj = {};
             headers.forEach((h, i) => rowObj[h] = cols[i] ? cols[i].trim() : "");
 
-            const name = rowObj.name || "Inconnu";
-            const role = rowObj.role || "";
-            const desc = rowObj.desc || "Pas de description disponible.";
-            const img = rowObj.img || "https://via.placeholder.com/400x250?text=Image+manquante";
+            const prenom = rowObj.prenom || "Inconnu";
+            const expertise = rowObj.expertise || "";
+            const description = rowObj.description || "Pas de description disponible.";
+            const image = rowObj.image || "https://via.placeholder.com/400x250?text=Image+manquante";
 
             // créer card
             const card = document.createElement('div');
@@ -124,4 +124,5 @@
   </script>
 
 </body>
+
 </html>
